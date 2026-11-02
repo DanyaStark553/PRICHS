@@ -1,4 +1,4 @@
-# 🌌 PRICHS (П.Р.І.Ч.С.)
+# PRICHS (П.Р.І.Ч.С.)
 
 > **Fine-Grained Sparse Mixture-of-Experts (MoE) LLM Architecture & Native Engine from Scratch in Rust & CUDA**  
 > *1.54B Total Parameters / 435M Active Parameters per Token • Zero PyTorch Runtime Dependency • Symbiotic Zero-Copy Memory Bridge with StarkDB*
@@ -10,7 +10,7 @@
 
 ---
 
-## ⚡ What is PRICHS?
+## What is PRICHS?
 
 **PRICHS** (*"Просто Розумний Інтелект Чекає Свого"*) is a high-performance, fine-grained sparse Mixture-of-Experts (MoE) neural language model and standalone training/inference engine written completely from the metal up in **Rust** and **hand-optimized CUDA C++**.
 
@@ -22,7 +22,7 @@ Unlike conventional machine learning workflows wrapped around Python and heavy f
 
 ---
 
-## 🧮 Model Specification (1.54B / 435M Active)
+## Model Specification (1.54B / 435M Active)
 
 | Parameter | Value | Engineering Rationale |
 | :--- | :--- | :--- |
@@ -38,7 +38,7 @@ Unlike conventional machine learning workflows wrapped around Python and heavy f
 
 ---
 
-## 🏛️ Architecture
+## Architecture
 
 ```
                     ┌───────────────────────────────┐
@@ -90,7 +90,7 @@ Unlike conventional machine learning workflows wrapped around Python and heavy f
 
 ---
 
-## 📦 Workspace Crates
+## Workspace Crates
 
 The codebase is organized as an atomic Cargo workspace:
 
@@ -103,7 +103,7 @@ The codebase is organized as an atomic Cargo workspace:
 
 ---
 
-## 🚀 Building & Getting Started
+## Building & Getting Started
 
 ### Prerequisites
 * **Rust:** 1.75+ (`cargo`, `rustc`)
@@ -132,7 +132,7 @@ cargo test --release
 
 ---
 
-## 🛠️ Data Pipeline & Tokenization
+## Data Pipeline & Tokenization
 
 PRICHS streams training tokens directly from memory-mapped binary shards (`.prichsbin` / `u16` token IDs) to maximize PCIe throughput and eliminate Python data-loader bottlenecks.
 
@@ -154,7 +154,7 @@ python tools/train_tokenizer.py --corpus dataset.txt --vocab-size 49152 --output
 
 ---
 
-## 🧠 Dual-Brain Symbiosis with StarkDB
+## Dual-Brain Symbiosis with StarkDB
 
 PRICHS is designed to run symbiotically alongside [StarkDB](https://github.com/DanyaStark553/starkdb), a zero-copy associative graph memory engine.
 
@@ -166,7 +166,7 @@ Instead of traditional slow RAG (vector search $\rightarrow$ text formatting $\r
 
 ---
 
-## 📜 License
+## License
 
 Licensed under the [MIT License](LICENSE).  
 Copyright (c) 2026 **Danya Stark**.
