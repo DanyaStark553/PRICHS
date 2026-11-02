@@ -1,0 +1,17 @@
+[package]
+name = "prichs-cuda"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "CUDA Kernels, Linux CUDA IPC, and GPU Memory Management for П.Р.І.Ч.С."
+
+[dependencies]
+anyhow.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+once_cell = "1.21"
+
+[features]
+default = []
+cuda = []

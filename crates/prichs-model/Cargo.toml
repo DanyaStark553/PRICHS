@@ -1,0 +1,16 @@
+[package]
+name = "prichs-model"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "MoE Transformer Architecture for П.Р.І.Ч.С."
+
+[dependencies]
+prichs-core = { path = "../prichs-core" }
+prichs-cuda = { path = "../prichs-cuda" }
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+rand.workspace = true
+rayon.workspace = true

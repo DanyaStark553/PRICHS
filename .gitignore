@@ -1,0 +1,50 @@
+# Rust / Cargo build artifacts
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# Native C / CUDA object and library artifacts
+*.obj
+*.lib
+*.a
+*.o
+*.so
+*.dll
+*.dylib
+*.pdb
+
+# Model weights, checkpoints and state dictionaries
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.gguf
+*.onnx
+
+# Training data, pre-tokenized binary shards, and corpora
+data/
+*.prichsbin
+*.bin
+*.dat
+*.arrow
+*.parquet
+*.jsonl
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# System and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+*.log

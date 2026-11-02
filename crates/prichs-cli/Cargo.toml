@@ -1,0 +1,24 @@
+[package]
+name = "prichs-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "П.Р.І.Ч.С. Core CLI - Просто Розумний Інтелект Чекає Свого"
+
+[[bin]]
+name = "prichs-cli"
+path = "src/main.rs"
+
+[[bin]]
+name = "prichs-server"
+path = "src/server.rs"
+
+[dependencies]
+prichs-core = { path = "../prichs-core" }
+prichs-model = { path = "../prichs-model" }
+prichs-tokenizer = { path = "../prichs-tokenizer" }
+prichs-train = { path = "../prichs-train" }
+prichs-cuda = { path = "../prichs-cuda" }
+anyhow.workspace = true
+rayon.workspace = true

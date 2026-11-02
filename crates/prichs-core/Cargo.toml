@@ -1,0 +1,17 @@
+[package]
+name = "prichs-core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Core Tensor primitives, memory management, and device abstraction for П.Р.І.Ч.С."
+
+[dependencies]
+prichs-cuda = { path = "../prichs-cuda" }
+anyhow.workspace = true
+thiserror.workspace = true
+bytemuck.workspace = true
+half.workspace = true
+rayon.workspace = true
+rand.workspace = true
+memmap2.workspace = true

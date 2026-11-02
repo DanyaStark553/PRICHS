@@ -1,0 +1,13 @@
+[package]
+name = "prichs-tokenizer"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Bilingual Ukrainian/English BPE Tokenizer with StarkOS Control Tokens for П.Р.І.Ч.С."
+
+[dependencies]
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tokenizers = { version = "0.23.2", default-features = false, features = ["fancy-regex"] }

@@ -1,0 +1,36 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/prichs-core",
+    "crates/prichs-cuda",
+    "crates/prichs-model",
+    "crates/prichs-tokenizer",
+    "crates/prichs-train",
+    "crates/prichs-cli",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Danya Stark <DanyaStark553@users.noreply.github.com>"]
+repository = "https://github.com/DanyaStark553/PRICHS"
+homepage = "https://github.com/DanyaStark553/PRICHS"
+license = "MIT"
+
+[workspace.dependencies]
+anyhow = "1.0"
+thiserror = "1.0"
+tracing = "0.1"
+memmap2 = "0.9"
+bytemuck = { version = "1.18", features = ["derive"] }
+half = { version = "2.4", features = ["bytemuck"] }
+rayon = "1.10"
+rand = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"

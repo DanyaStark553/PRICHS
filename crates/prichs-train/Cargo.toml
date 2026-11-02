@@ -1,0 +1,15 @@
+[package]
+name = "prichs-train"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Training pipeline, Autograd primitives, AdamW, and MoE Load Balancing Loss for П.Р.І.Ч.С."
+
+[dependencies]
+prichs-core = { path = "../prichs-core" }
+prichs-model = { path = "../prichs-model" }
+anyhow.workspace = true
+rand.workspace = true
+tracing.workspace = true
+memmap2.workspace = true
